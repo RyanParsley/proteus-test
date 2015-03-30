@@ -44,6 +44,7 @@ module.exports = function(grunt) {
         tasks: ['karma', 'protractor:all'],
         options: {
           spawn: false,
+          atBegin: true
         },
       },
     },
