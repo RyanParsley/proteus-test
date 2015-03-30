@@ -29,7 +29,10 @@ module.exports = function(grunt) {
       options: {
         configFile: 'test/e2e.conf.js', // Default config file
         keepAlive: true, // If false, the grunt process stops when the test fails.
-        noColor: false // If true, protractor will not use colors in its output.
+        noColor: false, // If true, protractor will not use colors in its output.
+        capabilities: {
+          'browsername': 'phantomjs',
+        }
       },
       all: {   // Grunt requires at least one target to run so you can simply put 'all: {}' here too.
 
